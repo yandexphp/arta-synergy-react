@@ -9,7 +9,9 @@
 ## Install
 
 ```bash
-npm install --save arta-synergy-react
+npm install --save-dev git+https://github.com/yandexphp/arta-synergy-react.git
+
+yarn add -D git+https://github.com/yandexphp/arta-synergy-react.git
 ```
 
 ## Usage
@@ -20,7 +22,7 @@ import * as React from 'react'
 import { ButtonExample } from 'arta-synergy-react'
 
 const App = () => {
-  return <ButtonExample />
+  return <ButtonExample label='Happy Coding!' />
 }
 ```
 
