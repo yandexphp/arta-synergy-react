@@ -1,1 +1,5 @@
-export { Thing } from './Thing'
+export { ButtonExample } from './ButtonExample'
+export { Icon } from './Icon'
+export { Image } from './Image'
+export { MultiInput } from './MultiInput'
+export { Text } from './Text'
