@@ -14,7 +14,7 @@ export interface ITag {
   value: string
 }
 
-export type Props = {
+export type MultiInputProps = {
   values: ITag[]
   buttonIcon?: string
   buttonHandler?: () => void
@@ -23,7 +23,7 @@ export type Props = {
   multi?: boolean
 }
 
-export const MultiInput: React.FC<Props> = (props) => {
+export const MultiInput: React.FC<MultiInputProps> = (props: MultiInputProps) => {
   const {values: initialValues, placeholder, multi: isMulti, buttonIcon, buttonHandler, tagRemoveHandler} = props
   const [tagsValues, setTagsValues] = useState<ITag[]>([])
   const [disabled] = useState<boolean>(true)

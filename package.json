@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yandexphp/arta-synergy-react.git"
+    "url": "http://gitlab.lan.arta.kz/develop/synergynext.git"
   },
   "peerDependencies": {
     "react": ">=16"

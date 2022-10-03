@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta } from '@storybook/react'
 
-import { Image } from './Image'
+import { Image, ImageProps } from './Image'
 
 const meta: Meta = {
   title: 'Изображение',
@@ -10,10 +10,10 @@ const meta: Meta = {
 
 export default meta
 
-export const Default = () => (
+export const Default = (props: ImageProps) => (
   <Image
-    src='https://media.tproger.ru/uploads/2016/10/reactmini.png'
-    width={770}
-    height={270}
+    src={props.src || 'https://media.tproger.ru/uploads/2016/10/reactmini.png'}
+    width={props.width || 770}
+    height={props.height || 270}
   />
 )

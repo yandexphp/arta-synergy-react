@@ -3,15 +3,14 @@
 >
 
 [![NPM](https://img.shields.io/npm/v/arta-synergy-react.svg)](https://www.npmjs.com/package/arta-synergy-react)
-[![ARTA Software - react components](https://img.shields.io/badge/components-ARTA_Software-brightgreen.svg)](https://github.com/yandexphp/arta-synergy-react)
-[![license](https://img.shields.io/github/license/yandexphp/mit-license.svg)](https://github.com/yandexphp/mit-license/blob/master/LICENSE)
+[![ARTA Software - react components](https://img.shields.io/badge/components-ARTA_Software-brightgreen.svg)](http://gitlab.lan.arta.kz/develop/synergynext/-/tree/master/frontend/arta-synergy-react)
 
 ## Install
 
 ```bash
-npm install --save-dev git+https://github.com/yandexphp/arta-synergy-react.git
+npm install --save-dev git+http://gitlab.lan.arta.kz/develop/synergynext.git
 
-yarn add -D git+https://github.com/yandexphp/arta-synergy-react.git
+yarn add -D git+http://gitlab.lan.arta.kz/develop/synergynext.git
 ```
 
 ## Usage
@@ -28,4 +27,4 @@ const App = () => {
 
 ## License
 
-MIT © [ARTA Software](https://github.com/yandexphp/arta-synergy-react/LICENSE)
+MIT © [ARTA Software](http://gitlab.lan.arta.kz/develop/synergynext.git/LICENSE)

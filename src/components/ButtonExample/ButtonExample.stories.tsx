@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta } from '@storybook/react'
 
-import { ButtonExample, Props } from './ButtonExample'
+import { ButtonExample, ButtonExampleProps } from './ButtonExample'
 
 const meta: Meta = {
   title: 'Пример компонента',
@@ -10,4 +10,4 @@ const meta: Meta = {
 
 export default meta
 
-export const Default = (props: Props) => <ButtonExample label={props.label || 'Hello World'} />
+export const Default = (props: ButtonExampleProps) => <ButtonExample label={props.label || 'Hello World'} />

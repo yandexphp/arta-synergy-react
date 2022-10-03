@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta } from '@storybook/react'
 
-import { Icon } from './Icon'
+import { Icon, IconProps } from './Icon'
 
 const meta: Meta = {
   title: 'Иконка',
@@ -10,4 +10,4 @@ const meta: Meta = {
 
 export default meta
 
-export const Default = () => <Icon icon='verified'/>
+export const Default = (props: IconProps) => <Icon icon={props.icon || 'verified'} />

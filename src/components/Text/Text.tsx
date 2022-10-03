@@ -7,7 +7,7 @@ import 'uikit/dist/css/uikit.min.css'
 
 UIkit.use(Icons)
 
-export enum TextSize {
+export enum ETextSize {
     small = 'uk-text-small',
     default = 'uk-text-default',
     large = 'uk-text-large'
@@ -37,7 +37,7 @@ export enum ETextAlign {
     justify = 'justify'
 }
 
-export type Props = {
+export type TextProps = {
     value: string
     size?: 'small' | 'default' | 'large'
     styles?: CSSProperties
@@ -57,7 +57,7 @@ export type Props = {
     italic?: boolean
 }
 
-export const Text: FC<Props> = memo(props => {
+export const Text: FC<TextProps> = memo((props: TextProps) => {
     const {
         value,
         size,
@@ -78,7 +78,7 @@ export const Text: FC<Props> = memo(props => {
         italic
     } = props
 
-    const textSize = size ? TextSize[size] : TextSize.default
+    const textSize = size ? ETextSize[size] : ETextSize.default
     const textHidden = hidden ? !isFormEditor : false
     const style: CSSProperties = {
         color: '#222',

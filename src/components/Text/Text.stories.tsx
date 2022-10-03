@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { Text, ETextAlign, ETextFontFamily, Props } from './Text'
+import { Text, ETextAlign, ETextFontFamily, TextProps } from './Text'
 
 export default {
   title: 'Неизменяемый текст',
   component: Text,
 }
 
-export const Default = (props: Props) => {
+export const Default = (props: TextProps) => {
   const { value, size, fontSize, fontFamily, align, styles, width, height, isFormEditor, classes, truncate, bold, underline, strike, italic } = props
 
   return (

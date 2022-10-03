@@ -1,1 +1,1 @@
-export { MultiInput } from './MultiInput'
+export * from './MultiInput'

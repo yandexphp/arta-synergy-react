@@ -1,21 +1,21 @@
 import React, {CSSProperties, FC, memo} from 'react'
 
-export enum ETextAlign {
+export enum EImageAlign {
     center = 'center',
     left = 'left',
     right = 'right',
     justify = 'justify'
 }
 
-export type Props = {
+export type ImageProps = {
     styles?: CSSProperties
     width?: number | string
     height?: number | string
-    align?: ETextAlign
+    align?: EImageAlign
     src?: string
 }
 
-export const Image: FC<Props> = memo((props) => {
+export const Image: FC<ImageProps> = memo((props: ImageProps) => {
     const {
         styles,
         width,

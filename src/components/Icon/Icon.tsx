@@ -3,15 +3,15 @@ import classNames from 'classnames'
 
 import './Icon.css'
 
-export enum IconPositions {
+export enum EIconPositions {
     right,
     left
 }
 
-export type Props = {
+export type IconProps = {
     icon: string
     hidden?: boolean
-    position?: IconPositions
+    position?: EIconPositions
     onMousedown?: MouseEventHandler<HTMLSpanElement>
     onMouseUp?: MouseEventHandler<HTMLSpanElement>
     onClick?: MouseEventHandler<HTMLSpanElement>
@@ -24,7 +24,7 @@ export type Props = {
     size?: number
 }
 
-export const Icon: FC<Props> = memo(props => {
+export const Icon: FC<IconProps> = memo((props: IconProps) => {
     const {
         hidden,
         icon,
@@ -45,7 +45,7 @@ export const Icon: FC<Props> = memo(props => {
         'material-icons',
         className, {
             'uk-form-icon': forForm,
-            'uk-form-icon-flip': position === IconPositions.right,
+            'uk-form-icon-flip': position === EIconPositions.right,
             'withHover': withHover
         }), [className, forForm, position, withHover])
 
